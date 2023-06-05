@@ -2,11 +2,11 @@
     left: 0;
     top: 0;
     display: flex;
-    width: 100%;
+    width: 100vw;
     height: 60px;
     background-color: #ff5252;
     align-items: center;
-    position: fixed;
+    /* position: fixed; */
 }
 
 .child{

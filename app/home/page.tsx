@@ -10,7 +10,7 @@ export const metadata = {
 export default function Home() {
     return(
         <div className={styles.parent}>
-            <h1>Dashboard</h1>
+            <h1 className='title'>Dashboard</h1>
             <div className={styles.cards}>
                 {tools.map((tool) => (
                     <div className=''>
