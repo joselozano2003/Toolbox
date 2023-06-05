@@ -9,6 +9,7 @@ export default function Text() {
     return(
         <div>
             <h1>Text Analyzer</h1>
+            <h2>Coming Soon!</h2>
         </div>
     )
 }
