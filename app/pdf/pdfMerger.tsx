@@ -1,4 +1,5 @@
 'use client';
+import styles from '@/styles/Pdf.module.css'
 
 import React, { useState } from 'react';
 import { PDFDocument } from 'pdf-lib';
@@ -69,11 +70,18 @@ export function PdfMerger() {
   };
 
   return (
-    <div>
-        <form onSubmit={handleMerge}>
-            <input type="file" name="pdfFiles" onChange={handleFileChange} />
-            <button type="submit">Merge PDFs</button>
-        </form>
+    <div className={styles.parent}>
+        <div className={styles.buttons}>
+            <form onSubmit={handleMerge} className={styles.header} style={{display: 'flex', justifyContent: 'space-around'}}>
+                <label htmlFor="pdfFiles" className="file-upload-label">
+                    Select File
+                </label>
+                <input type="file" id="pdfFiles" name="pdfFiles" onChange={handleFileChange} style={{ display: 'none' }} />
+                <button type="submit" className="file-upload-label">
+                    Merge PDFs
+                </button>
+            </form>
+        </div>
 
         {pdfFiles.length > 0 && (
             <div>
@@ -82,7 +90,7 @@ export function PdfMerger() {
                     {pdfFiles.map((file, index) => (
                         <li key={index}>
                             {file.name}
-                            <button onClick={() => handleRemoveFile(index)}>Remove</button>
+                            <button className="file-upload-label" onClick={() => handleRemoveFile(index)}>Remove</button>
                         </li>
                     ))}
                 </ul>
