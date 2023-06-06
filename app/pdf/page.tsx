@@ -8,7 +8,7 @@ export const metadata = {
 export default async function PDF() {
     return(
         <div>
-            <h1 style={{textAlign: 'center'}} className="title">PDF Generator</h1>
+            <h1 className="title">PDF Generator</h1>
             <PdfMerger />
         </div>
     )
