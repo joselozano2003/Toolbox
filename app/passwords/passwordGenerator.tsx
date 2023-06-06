@@ -47,7 +47,7 @@ export function PasswordGenerator() {
             let password = `${toTitleCase(getRandomItem(words))}`
             for (let i = 0; i < 3; i++) {
                 const option = options[Math.floor(Math.random() * 3)];
-                password += `${getRandomItem(option)?.toLowerCase()}${getRandomItem(option)?.toLowerCase()}${getRandomItem(option)?.toLowerCase()}`
+                password += `${getRandomItem(option)?.toLowerCase()}${getRandomItem(option)?.toLowerCase()}${getRandomItem(option)?.toLowerCase()}-`
             }
             password += `${getRandomItem(specialCharacters)?.toLowerCase()}`
             setPassword(password);
