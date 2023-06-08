@@ -15,15 +15,15 @@ const tools = [
         link: '/passwords',
     },
     {
-        name: 'Youtube Downloader',
-        description: 'A tool to download youtube videos',
-        link: '/youtube',
-    },
-    {
         name: 'Text Analyzer',
         description: 'A tool to count words in a text',
         link: '/text',
-    }
+    },
+    {
+        name: 'Spotify to Deezer',
+        description: 'A tool to convert Spotify playlists to Deezer',
+        link: '/spotify',
+    },
 ];
 
 const numbers = [
